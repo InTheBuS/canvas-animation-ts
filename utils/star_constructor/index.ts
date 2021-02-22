@@ -8,20 +8,18 @@ export interface  IStarProperties {
     maxX: number;
     maxY: number;
     minY: number;
-    draw: () => void;
-    update: () => void;
 }
 
 export class Star implements IStarProperties {
-    x: number;
-    y: number;
-    dy: number;
-    context: CanvasRenderingContext2D;
-    img: HTMLImageElement;
-    minX: number;
-    maxX: number;
-    maxY: number;
-    minY: number;
+    x: IStarProperties['x'];
+    y: IStarProperties['y'];
+    dy: IStarProperties['dy'];
+    context: IStarProperties['context'];
+    img: IStarProperties['img'];
+    minX: IStarProperties['minX'];
+    maxX: IStarProperties['maxX'];
+    maxY: IStarProperties['maxY'];
+    minY: IStarProperties['minY'];
 
     constructor(x: number, y: number, dy: number, context: CanvasRenderingContext2D) {
         this.x = x;
