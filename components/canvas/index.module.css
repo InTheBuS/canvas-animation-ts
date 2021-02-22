@@ -1,0 +1,4 @@
+.canvas__container {
+    width: calc(100%*0.62);
+    height: 100vh;
+}
